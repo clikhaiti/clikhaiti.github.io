@@ -1,0 +1,19 @@
+{
+  "name": "ANDERSON THE BEST FRIEND",
+  "short_name": "ANDERSON",
+  "description": "Application intelligente de rencontres et de relations humaines de qualité, avec l'assistant Anderson.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#082D22",
+  "theme_color": "#082D22",
+  "categories": ["social", "lifestyle"],
+  "icons": [
+    { "src": "assets/images/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/images/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

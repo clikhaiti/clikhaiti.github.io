@@ -1,194 +1,316 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suivez-nous</title>
-    <!-- Nou ajoute lyen pou ikon FontAwesome yo ka parèt byen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        max-width: 1200px;
-        width: 100%;
-        text-align: center;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #0f172a, #1e293b);
-        display: flex;
-        flex-direction: column; /* Pèmèt tit la ak kat yo separe vètikal */
-        justify-content: center;
-        align-items: center;
-        color: white;
-        padding: 20px;
-        overflow: hidden;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    .subtitle {
-        color: #cbd5e1;
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-    }
-
-    /* Modifikasyon pou rann li orizontal ak slide */
-    .cards {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        width: 100%;
-        overflow-x: auto; /* Pèmèt glise de dwat a gòch */
-        scroll-snap-type: x mandatory; /* Fè chak kat bloke byen lè w ap glise */
-        padding: 20px 10px;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch; /* Slide pi dous sou iOS */
-    }
-
-    /* Kache ba scrollbar la pou ekran yo ka pi bèl */
-    .cards::-webkit-scrollbar {
-        display: none;
-    }
-    .cards {
-        scrollbar-width: none; /* Pou Firefox */
-    }
-
-    /* Santre kat yo si ekran an laj ase pou yo tout antre */
-    @media (min-width: 950px) {
-        .cards {
-            justify-content: center;
-        }
-    }
-
-    .card {
-        flex: 0 0 280px; /* Anpeche kat yo rasi, yo chak ap kenbe 280px lajè */
-        scroll-snap-align: center; /* Kat la ap santre lè w fin glise */
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 30px;
-        transition: 0.3s;
-        cursor: pointer;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: center;
-    }
-
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .icon {
-        font-size: 50px;
-        margin-bottom: 15px;
-    }
-
-    .whatsapp {
-        color: #25D366;
-    }
-
-    .tiktok {
-        color: #ffffff; /* Mete l an blan pou l ka parèt pi byen sou fon nwa a */
-    }
-
-    .youtube {
-        color: #ff0000;
-    }
-
-    .card h2 {
-        margin-bottom: 10px;
-        font-size: 1.3rem;
-    }
-
-    .card p {
-        color: #d1d5db;
-        margin-bottom: 20px;
-        font-size: 0.95rem;
-        min-height: 45px; /* Aliyen tèks yo pou yo gen menm wotè */
-    }
-
-    .btn {
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        background: #2563eb;
-        padding: 12px 24px;
-        border-radius: 10px;
-        transition: 0.3s;
-        width: 100%; /* Bouton an ap pran tout lajè kat la */
-    }
-
-    .btn:hover {
-        background: #1d4ed8;
-    }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ANDERSON — The Best Friend</title>
+  <meta name="description" content="ANDERSON THE BEST FRIEND — application intelligente de rencontres et de relations humaines de qualité, avec un assistant personnel.">
+  <meta name="theme-color" content="#082D22">
+  <link rel="icon" type="image/svg+xml" href="assets/images/icons/icon.svg">
+  <link rel="apple-touch-icon" href="assets/images/icons/icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
-<div class="container">
-    
-    <!-- Imaj kache a -->
-    <div class="separator" style="clear: both;">
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGGbXYkESi1DjIExcWU4rt-qb4qbVANU6bLjrv2IE7uqE54z_wcd8Tdpz_h6UdlHLkypXNvLlN_EA_jHKJ0Kxptr08QZ1bzF69-IYYVbPnCMhqmSpzLuRGBYZvDeDsQG9PlJEi0u8wzt7s6If4_LdYUXHzvxJxsb1-T_BPx0d4Ku6-Qs0gh31Zu4S2M2j/s1280/20260613_075026.jpg" style="display: none; padding:0; text-align: center; ">
-            <img style="display: none; padding:0; text-align: center; " alt="" border="0" width="400" data-original-height="1264" data-original-width="1280" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcGGbXYkESi1DjIExcWU4rt-qb4qbVANU6bLjrv2IE7uqE54z_wcd8Tdpz_h6UdlHLkypXNvLlN_EA_jHKJ0Kxptr08QZ1bzF69-IYYVbPnCMhqmSpzLuRGBYZvDeDsQG9PlJEi0u8wzt7s6If4_LdYUXHzvxJxsb1-T_BPx0d4Ku6-Qs0gh31Zu4S2M2j/s400/20260613_075026.jpg"/>
-        </a>
+<!-- ================= AUTH / WELCOME (hors coquille) ================= -->
+<div id="gate">
+  <section id="view-welcome" class="view" data-gate-view="welcome">
+    <div class="welcome-card">
+      <div class="welcome-hero">
+        <img src="assets/images/couple.png" alt="Un couple souriant et complice">
+        <div class="welcome-logo">
+          <img src="assets/images/logo.svg" alt="Logo Anderson">
+          <div class="brand-name">ANDERSON</div>
+          <div class="brand-sub">THE BEST FRIEND</div>
+        </div>
+        <div class="welcome-slogan">« Plus qu'une rencontre, une véritable connexion. »</div>
+      </div>
+      <div class="welcome-body">
+        <p>Application intelligente de rencontres : personnalité, compatibilité, messagerie et conseils avec ton assistant Anderson.</p>
+        <button class="btn btn-gold btn-block" data-go="register">Créer un compte</button>
+        <div class="divider">ou</div>
+        <button class="btn btn-ghost btn-block" data-go="login">Entrer</button>
+      </div>
     </div>
+  </section>
 
-    <h1>Suivez-nous</h1>
-    <p class="subtitle">Rejoignez nos différentes plateformes pour plus de contenu.</p>
-
-    <!-- Kat yo mete an orizontal kounye a -->
-    <div class="cards">
-        
-        <div class="card">
-            <div class="icon whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
+  <section id="view-login" class="view" data-gate-view="login" hidden>
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <div class="auth-logo"><img src="assets/images/logo.svg" alt=""></div>
+        <h2 class="auth-title">Bienvenue !</h2>
+        <p class="auth-sub">Connecte-toi pour continuer</p>
+        <form id="form-login" novalidate>
+          <div class="field">
+            <label for="login-id">Email ou téléphone</label>
+            <input class="input" id="login-id" type="text" autocomplete="username" placeholder="Email ou numéro">
+          </div>
+          <div class="field">
+            <label for="login-pass">Mot de passe</label>
+            <div class="input-wrap">
+              <input class="input" id="login-pass" type="password" autocomplete="current-password" placeholder="Mot de passe">
+              <button type="button" class="eye" data-toggle-pass="login-pass" aria-label="Afficher le mot de passe"></button>
             </div>
-            <h2>WhatsApp</h2>
-            <p>Recevez nos nouveautés directement sur WhatsApp.</p>
-            <a href="https://whatsapp.com/channel/0029VbCLrFm2v1Irbwtq8n2Z" class="btn">Rejoindre</a>
+          </div>
+          <label class="check mb"><input type="checkbox" id="login-remember" checked> Se souvenir de moi</label>
+          <div class="flex-between mb">
+            <a href="#" data-go="forgot">Mot de passe oublié ?</a>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit">Se connecter</button>
+        </form>
+        <div class="divider">ou</div>
+        <button class="btn-oauth" data-oauth="google"><span class="oauth-ico" data-icon="globe"></span> Continuer avec Google</button>
+        <button class="btn-oauth" data-oauth="apple"><span class="oauth-ico" data-icon="phone"></span> Continuer avec Apple</button>
+        <p class="oauth-note">L'authentification Google/Apple réelle nécessite un service externe — démonstration locale.</p>
+        <p class="auth-alt">Pas encore de compte ? <a href="#" data-go="register">S'inscrire</a></p>
+        <div class="demo-box">
+          Comptes de démonstration — utilisateur : <code>demo@anderson.app</code> / <code>demo1234</code><br>
+          Administrateur : <code>admin@anderson.app</code> / <code>admin1234</code>
         </div>
-
-        <div class="card">
-            <div class="icon tiktok">
-                <i class="fa-brands fa-tiktok"></i>
-            </div>
-            <h2>TikTok</h2>
-            <p>Découvrez nos vidéos courtes et tendances.</p>
-            <a href="https://tiktok.com/@clickhaiti" class="btn">Suivre</a>
-        </div>
-
-        <div class="card">
-            <div class="icon youtube">
-                <i class="fa-brands fa-youtube"></i>
-            </div>
-            <h2>YouTube</h2>
-            <p>Regardez nos vidéos et tutoriels exclusifs.</p>
-            <a href="https://www.youtube.com/@clickhaiti" class="btn">S'abonner</a>
-        </div>
-
+      </div>
     </div>
+  </section>
+
+  <section id="view-register" class="view" data-gate-view="register" hidden>
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <div class="auth-logo"><img src="assets/images/logo.svg" alt=""></div>
+        <h2>Inscription</h2>
+        <p class="auth-sub">Rejoins notre communauté</p>
+        <form id="form-register" novalidate>
+          <div class="field">
+            <label for="reg-name">Nom complet</label>
+            <input class="input" id="reg-name" type="text" autocomplete="name" placeholder="Nom complet">
+          </div>
+          <div class="field">
+            <label for="reg-email">Email</label>
+            <input class="input" id="reg-email" type="email" autocomplete="email" placeholder="Email">
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="reg-pass">Mot de passe</label>
+              <div class="input-wrap">
+                <input class="input" id="reg-pass" type="password" autocomplete="new-password" placeholder="Mot de passe">
+                <button type="button" class="eye" data-toggle-pass="reg-pass" aria-label="Afficher le mot de passe"></button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="reg-pass2">Confirmer le mot de passe</label>
+              <input class="input" id="reg-pass2" type="password" autocomplete="new-password" placeholder="Confirmer">
+            </div>
+          </div>
+          <div class="field">
+            <label for="reg-birth">Date de naissance</label>
+            <input class="input" id="reg-birth" type="date">
+          </div>
+          <label class="check mb"><input type="checkbox" id="reg-adult"> Je certifie avoir 18 ans ou plus</label>
+          <label class="check mb"><input type="checkbox" id="reg-terms"> J'accepte les conditions d'utilisation et la politique de confidentialité</label>
+          <button class="btn btn-gold btn-block" type="submit">Créer mon compte</button>
+        </form>
+        <div class="divider">ou</div>
+        <button class="btn-oauth" data-oauth="google"><span class="oauth-ico" data-icon="globe"></span> Continuer avec Google</button>
+        <button class="btn-oauth" data-oauth="apple"><span class="oauth-ico" data-icon="phone"></span> Continuer avec Apple</button>
+        <p class="auth-alt">Déjà membre ? <a href="#" data-go="login">Se connecter</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="view-forgot" class="view" data-gate-view="forgot" hidden>
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <div class="auth-logo"><img src="assets/images/logo.svg" alt=""></div>
+        <h2>Mot de passe oublié</h2>
+        <p class="auth-sub">Démonstration locale : saisis ton email pour recevoir une « confirmation ».</p>
+        <form id="form-forgot" novalidate>
+          <div class="field">
+            <label for="forgot-email">Email</label>
+            <input class="input" id="forgot-email" type="email" placeholder="Ton adresse email">
+          </div>
+          <button class="btn btn-gold btn-block" type="submit">Envoyer le lien de récupération</button>
+        </form>
+        <p class="auth-alt"><a href="#" data-go="login">Retour à la connexion</a></p>
+      </div>
+    </div>
+  </section>
 </div>
 
-<script>
-document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-        card.style.transform = 'scale(1.05)';
-        setTimeout(() => {
-            card.style.transform = '';
-        }, 200);
-    });
-});
-</script>
+<!-- ================= APPLICATION (coquille) ================= -->
+<div id="app" hidden>
 
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="assets/images/logo.svg" alt="">
+      <div>
+        <div class="brand-name">ANDERSON</div>
+        <div class="brand-sub">THE BEST FRIEND</div>
+      </div>
+    </div>
+    <nav id="side-nav" aria-label="Navigation principale"></nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="btn-icon chat-back" id="btn-chat-back" aria-label="Retour aux conversations"></button>
+      <h1 id="page-title">Accueil</h1>
+      <div class="topbar-actions">
+        <button class="btn-icon" id="btn-theme" aria-label="Changer de thème"></button>
+        <button class="btn-icon" id="btn-notif" aria-label="Notifications"></button>
+        <button class="btn-icon" id="btn-logout" aria-label="Se déconnecter"></button>
+      </div>
+    </header>
+
+    <main class="content" id="content">
+
+      <section id="view-home" class="view" hidden>
+        <div id="home-root"></div>
+      </section>
+
+      <section id="view-discover" class="view" hidden>
+        <div class="discover-layout">
+          <aside class="card filters-panel">
+            <p class="filters-title">FILTRES</p>
+            <div class="field">
+              <label for="f-city">Ville</label>
+              <select class="input" id="f-city"><option value="">Toutes</option></select>
+            </div>
+            <div class="field">
+              <label for="f-lang">Langue</label>
+              <select class="input" id="f-lang">
+                <option value="">Toutes</option>
+                <option>Français</option><option>Créole haïtien</option>
+                <option>Anglais</option><option>Espagnol</option><option>Portugais</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-relation">Type de relation</label>
+              <select class="input" id="f-relation">
+                <option value="">Tous</option>
+                <option>Sérieuse</option><option>Amitié</option><option>Discuter</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Âge : <span id="f-age-label">18 – 60</span></label>
+              <div class="range-row">
+                <input type="range" id="f-age-min" min="18" max="60" value="18">
+                <input type="range" id="f-age-max" min="18" max="60" value="60">
+              </div>
+            </div>
+            <div class="field">
+              <label>Compatibilité minimale : <span id="f-compat-label">0%</span></label>
+              <input type="range" id="f-compat" min="0" max="95" value="0" step="5">
+            </div>
+            <div class="field">
+              <label for="f-interest">Intérêt</label>
+              <select class="input" id="f-interest"><option value="">Tous</option></select>
+            </div>
+            <button class="btn btn-ghost btn-sm btn-block" id="f-reset">Réinitialiser</button>
+          </aside>
+          <div id="discover-root"></div>
+        </div>
+      </section>
+
+      <section id="view-matches" class="view" hidden>
+        <div class="content-narrow" id="matches-root"></div>
+      </section>
+
+      <section id="view-favorites" class="view" hidden>
+        <div class="content-narrow" id="favorites-root"></div>
+      </section>
+
+      <section id="view-chat" class="view" hidden>
+        <div class="chat-layout" id="chat-layout">
+          <aside class="chat-list" id="chat-list"></aside>
+          <div class="chat-main">
+            <div class="chat-head" id="chat-head"></div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-bar">
+              <div class="chat-tools">
+                <button class="btn-icon" id="chat-emoji-btn" aria-label="Emojis"></button>
+                <button class="btn-icon" id="chat-translate-btn" aria-label="Traduire"></button>
+              </div>
+              <textarea class="input" id="chat-input" rows="1" placeholder="Écris ton message…"></textarea>
+              <button class="btn btn-gold btn-sm" id="chat-send" style="padding:12px 16px" aria-label="Envoyer"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-profile" class="view" hidden>
+        <div id="profile-root"></div>
+      </section>
+
+      <section id="view-personality" class="view" hidden>
+        <div id="personality-root"></div>
+      </section>
+
+      <section id="view-ai" class="view" hidden>
+        <div class="ai-wrap">
+          <div class="ai-head">
+            <img src="assets/images/anderson-bot.png" alt="Avatar d'Anderson">
+            <div>
+              <div class="ai-name">Anderson — Best Friend</div>
+              <div class="ai-status">En ligne — réponses de démonstration</div>
+            </div>
+          </div>
+          <div class="ai-topics" id="ai-topics"></div>
+          <div class="ai-messages" id="ai-messages"></div>
+          <div class="chat-input-bar" style="border:1px solid var(--line-soft); border-top:0; border-radius:0 0 20px 20px">
+            <textarea class="input" id="ai-input" rows="1" placeholder="Tape ta question pour Anderson…"></textarea>
+            <button class="btn btn-gold btn-sm" id="ai-send" style="padding:12px 16px" aria-label="Envoyer"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-premium" class="view" hidden>
+        <div class="content-narrow" id="premium-root"></div>
+      </section>
+
+      <section id="view-notifications" class="view" hidden>
+        <div class="content-narrow" id="notif-root"></div>
+      </section>
+
+      <section id="view-settings" class="view" hidden>
+        <div class="content-narrow" id="settings-root"></div>
+      </section>
+
+      <section id="view-admin" class="view" hidden>
+        <div class="admin-grid">
+          <aside class="card admin-menu" id="admin-menu"></aside>
+          <div id="admin-root"></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <nav class="tabbar" aria-label="Navigation mobile">
+    <div class="tabbar-inner" id="tabbar"></div>
+  </nav>
+</div>
+
+<!-- Overlays -->
+<div id="match-root"></div>
+<div class="toast-root" id="toast-root"></div>
+<div id="sheet-root"></div>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/translation.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/profile.js"></script>
+<script src="assets/js/personality.js"></script>
+<script src="assets/js/matching.js"></script>
+<script src="assets/js/discovery.js"></script>
+<script src="assets/js/chat.js"></script>
+<script src="assets/js/anderson-ai.js"></script>
+<script src="assets/js/notifications.js"></script>
+<script src="assets/js/premium.js"></script>
+<script src="assets/js/admin.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
